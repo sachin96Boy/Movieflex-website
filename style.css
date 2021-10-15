@@ -95,6 +95,7 @@ body {
     right:1px;
     border-radius:15px;
     cursor:pointer;
+    transition: 1s ease all;
 }
 
 
@@ -285,4 +286,8 @@ body {
 .toggle-ball.active{
     background-color:white;
     transform:translateX(-20px);
+}
+
+@media only screen and (max-width: 940px){
+    
 }
