@@ -11,6 +11,7 @@ body {
   height: 50px;
   background-color: black;
   font-family: 'Sen', sans-serif;
+  
 }
 
 .navbar-container{
@@ -19,6 +20,7 @@ body {
     padding: 0 50px;
     height:100%;
     color:white;
+    
 }
 
 .logo-container{
@@ -135,7 +137,7 @@ body {
 }
 
 .featured-title{
-    width:200px;
+    width:400px;
 }
 
 .featured-description{
@@ -155,13 +157,21 @@ body {
 }
 
 .movie-list-container{
-    padding:20px;
+    padding:0 20px;
+}
+
+.movie-list-wrapper{
+    position:relative;
+    overflow:hidden;
+    
 }
 
 .movie-list{
     display:flex;
     align-items:center;
     height:300px;
+    transform:translateX(0);
+    transition: all 1s ease-in-out;
 }
 
 .movie-list-item{
@@ -192,6 +202,7 @@ body {
     height:200px;
     object-fit:cover;
     transition:all  1s ease-in-out;
+    border-radius:20px;
 }
 
 .movie-list-item-title{
@@ -233,4 +244,45 @@ body {
     transition:all  1s ease-in-out;
 
 
+}
+
+.arrow{
+    font-size:120px;
+    position:absolute;
+    top:70px;
+    right:0;
+    color:gray;
+    opacity:0.7;
+
+}
+
+.container.active{
+    background-color:white;
+}
+
+.movie-list-title.active{
+    color:black;
+}
+
+
+.navbar-container.active{
+    background-color:white;
+    color:black;
+}
+
+.sidebar.active{
+    background-color:white;
+}
+
+.left-menu-icon.active{
+    color:black;
+}
+
+.toggle.active{
+    background-color:black;
+}
+
+.toggle-ball.active{
+    background-color:white;
+    transform:translateX(-20px);
 }
